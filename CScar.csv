@@ -1,0 +1,9 @@
+id,F_name,L_name,Claim,Location,DOS,Doctor_name,Company,Stage,DOA,active,status
+371,Johddannah,Kavin,claim2,location1,2022-12-12,Rack,company1,frontdesk,nulfdl,1,1
+372,Johannah,Kirvin,claim1,location1,2022-12-12,Rack,company1,frontdesk,null,0,1
+374,Jocelin,Quince,claim1,location1,2022-12-17,Bhuvanesh,company1,frontdesk,null,1,1
+375,Judy,Deuss,claim2,location2,2022-12-13,Aswin,company2,frontdesk,null,1,1
+376,Johannah,Kirvin,claim1,location1,2022-12-10,Rack,company1,frontdesk,44896,0,1
+377,Genny,Figg,claim2,location2,2022-12-12,Mayoral,company2,frontdesk,44897,1,1
+378,Jocelin,Quince,claim1,location1,2022-12-14,Bhuvanesh,company1,frontdesk,44898,1,1
+379,Judy,Deuss,claim2,location2,2022-12-14,Aswin,company2,frontdesk,44899,0,1
