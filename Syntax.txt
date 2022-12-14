@@ -1,0 +1,126 @@
+<------------------------------------------>
+list
+
+# add
+
+letters = [ "a","b","c"]
+
+letters.append("d")  # to add the element at the end of the list
+
+letters.insert(0,"-") -----> result ["-","a","b","c","d"] # to add the element at the particular index of the list
+
+# remove
+
+letters.pop() ---->result ["-","a","b","c"] # to delete the element at the end of the list
+
+letters.pop(0) ---->result ["a","b","c"] # to delete the element at a particular location (index)
+
+letters.remove("b") # to remove the first occurance of the element in the list 
+hint : To remove the all the occurance of the of the element in a list you have to loop over the list to remove each "b" from the list
+
+del letters[0:3] # to remove the range of the element from the list 
+
+letters.clear
+
+print (letters)
+
+<------------------------------------------>
+
+letters = [ "a","b","c"]
+
+letters.index("a") # to return index of the element A
+
+<------------------------------------------>
+
+sorting function
+
+items = [
+("add1","10"),
+("add2","13"),
+("add3","7"),
+]
+
+
+# def sort_item(item):
+#	return item[1]
+
+//syntax : for lamda
+//items.sort (key = lambda parameters : expression)
+
+
+* items.sort (key = item :item[1])
+# items.sort (key = sort_item)
+print(items)
+
+map funtion
+
+items = [
+("add1","10"),
+("add2","13"),
+("add3","7"),
+]
+
+# prices = []
+# for item in items:
+#	prices.append(item[1])
+
+//syntax : for map function
+//map(function, iterable)
+
+*prices = list(map(lambda item:item[1],items))
+print (prices)
+
+<------------------------------------------>
+filter function
+
+
+items = [
+("add1","10"),
+("add2","13"),
+("add3","7"),
+] 
+
+*filtered = list(filter(lambda item:item[1] >= 10,items))
+
+print(filtered)
+
+<------------------------------------------>
+
+list comprehensions
+
+items = [
+("add1","10"),
+("add2","13"),
+("add3","7"),
+] 
+
+
+syntax :  list comprehensions
+
+variable = [expression iterations ]
+eg :  prices = [item[1] for item in items]
+print(prices)
+
+Output:
+
+[10,13,7,]
+
+
+#prices = list(map(lambda item:item[1],items))
+*prices = [item[1] for item in items] #--->  list comprehesion to map a list into different kind of list
+
+#filtered = list(filter(lambda item:item[1] >= 10,items))
+*filtered = [item[1] for item in items if item[1]] >= 10 #--->  list comprehesion to filter a list into different kind of list
+
+
+print(filtered)
+
+<------------------------------------------>
+
+Zip functions
+
+list1 = [1,2,3,]
+list2 = [10,20,30,]
+
+zipped_items = zip(list1,list2)  OUTPUT: [('1','10),('2','20),('3','30)]
+zipped_items = zip("abc",list1,list2)  OUTPUT: [('a','1','10),('b','2','20),('c','3','30)]
